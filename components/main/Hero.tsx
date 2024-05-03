@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroContent from '../sub/HeroContent'
-import NavBar from './NavBar'
 
 const Hero = () => {
   return (

@@ -3,10 +3,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/outline";
-import { ScrollParallax } from "react-just-parallax";
+// import { ScrollParallax } from "react-just-parallax";
 import Image from "next/image";
 import { Button, MovingBorder } from "../ui/moving-border";
-import { HoverBorderGradient } from "../ui/hover-border-gradient";
+// import { HoverBorderGradient } from "../ui/hover-border-gradient";
 
 
 
@@ -68,7 +68,7 @@ const HeroContent = () => {
       className ="w-full w-full flex justify-center items-center"
 
       >
-          <img width={650} height={650} src="/mainIconsdark.svg" alt="tech icons"  />
+          <Image width={650} height={650} src="/mainIconsdark.svg" alt="tech icons"  />
         
       </motion.div>
    

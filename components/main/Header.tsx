@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 import { HambugerMenu } from "../design/Header";
 import Hamburger from "../sub/toggleMenu/ToggleMenu";
 import { navigation } from "@/constans";
 import { useRouter } from 'next/router';
+import Image from "next/image";
 
 const Header = () => {
   const [openNavigation, setOpenNavigation] = useState(false);
@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a href="#hero" className="block w-[12rem] xl:mr-8">
-          <img src="/navIcon.svg" alt="logo" width={50} height={40} />
+          <Image src="/navIcon.svg" alt="logo" width={50} height={40} />
         </a>
 
         <nav

@@ -2,6 +2,7 @@
 import React from "react";
 import { BackgroundBeams } from "../ui/background-beams";
 import { Socials } from "@/constans";
+import Image from "next/image";
 
 export function BackgroundBeamsDemo() {
   return (
@@ -21,7 +22,7 @@ export function BackgroundBeamsDemo() {
               key={social.name}
               style={{ width: "24px", height: "24px" }}
             >
-              <img  src={social.src} alt={social.name} />
+              <Image  src={social.src} alt={social.name} />
             </a>
           ))}
         </div>
