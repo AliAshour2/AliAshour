@@ -1,0 +1,47 @@
+.hamburger {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .hamburger::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #fff;
+    transition: 0.3s;
+  }
+  
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transform: translateY(10px);
+    transition: 0.3s;
+  }
+  
+  /* js functional css */
+  
+  .hamburger.active {
+    transition: 0.3s;
+  }
+  
+  .hamburger.active::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0px #fff;
+  }
+  
+  .hamburger.active::after {
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0px #fff;
+  }
