@@ -27,7 +27,7 @@ const Projects = () => {
         />
 
         <ProjectCard
-          src="/Baity.png"
+          src="/baity.png"
           title="Baity"
           desc="Baity is wep app for real state"
           url="https://aliashour2.github.io/Baity-website/"
