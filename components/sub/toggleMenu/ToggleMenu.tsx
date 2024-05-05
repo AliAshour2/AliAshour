@@ -22,7 +22,7 @@ const Hamburger: React.FC<HamburgerProps> = ({ className, onClick, isOpen }) => 
   return (
     <>
       <div
-        className={`${styles.hamburger} ${className}`}
+        className={`${styles.hamburger} ${className || ""}`}
         onClick={handleHamburgerMenu}
         ref={toggleRef}
         

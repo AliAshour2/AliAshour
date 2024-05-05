@@ -10,9 +10,10 @@ const Projects = () => {
       className="flex flex-col items-center justify-center py-20"
     >
       
-      <SparklesPreview />
+      <SparklesPreview  />
       <div className="flex flex-col  h-full w-full md:flex-row gap-10 px-10 ">
         <ProjectCard
+          
           src="/LoraAi.png"
           title="Lora Ai"
           desc="AI powerd wepsite for chating with your data "

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion} from "framer-motion";
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/outline";
 // import { ScrollParallax } from "react-just-parallax";
@@ -10,12 +10,17 @@ import { Button, MovingBorder } from "../ui/moving-border";
 
 
 
+
+
+
 const HeroContent = () => {
+  
   return (
     <motion.div
       initial="hidden"
       animate="visible"
       className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      
     >
      
 
@@ -24,6 +29,7 @@ const HeroContent = () => {
         <motion.div
            className="Welcome-box py-[8px] px-[7px]  bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl "
           variants={slideInFromTop}
+         
         >
           
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
@@ -34,7 +40,7 @@ const HeroContent = () => {
 
         <motion.div
         variants={slideInFromLeft(0.5)}
-        className="flex flex-col gap-6 mt-6 text-6xl font-bold
+        className="flex flex-col gap-6 mt-6 text-6xl  font-bold
          text-white max-w-[600px] w-auto h-auto" >
           <span>
             Providing
@@ -55,12 +61,14 @@ const HeroContent = () => {
         </motion.p>
 
         <motion.a
+         
         variants={slideInFromLeft(1)}
         className = " button-primar text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          <Button>Download Resume</Button>
-          {/* <HoverBorderGradient>Download Resume</HoverBorderGradient> */}
+        href="https://drive.google.com/file/d/1hA4getJraZ-Nq_f8WOe1u90A91ItercX/view?usp=sharing"
+        target="_black"
+        > 
           
+          <Button>Download resume</Button>
         </motion.a>
       </div>
       <motion.div

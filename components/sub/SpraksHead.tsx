@@ -4,7 +4,7 @@ import { SparklesCore } from "../ui/sparkles";
 
 export function SparklesPreview() {
   return (
-    <div className="h-[10rem] py-10 z-30 w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[10rem] py-10 z-30 w-full flex flex-col items-center justify-center overflow-hidden rounded-md ">
       <h2 className="md:text-2xl text-3xl lg:text-3xl font-bold text-center text-white relative z-30">
         My Projects
       </h2>
